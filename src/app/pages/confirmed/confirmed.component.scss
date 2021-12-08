@@ -1,0 +1,36 @@
+
+@import '../../@theme/styles/themes';
+#dialogContainer {
+}
+#cofirmDialog {
+  width: 300px;
+  margin: auto 0px;
+  left:50%;
+
+}
+body{font-family: 'Roboto', sans-serif;
+font-size: 11px;}
+
+table.dataTable {font-family: 'Roboto', sans-serif;
+  font-size: 12px;}
+
+
+@include nb-install-component() {
+  .buttons-row {
+    margin: -0.5rem;
+  }
+
+  button[nbButton] {
+    margin: 0.5rem;
+  }
+
+  .action-icon {
+    @include nb-ltr(margin-right, 0.5rem);
+    @include nb-rtl(margin-left, 0.5rem);
+  }
+
+  .actions-card {
+    height: 8rem;
+  }
+}
+

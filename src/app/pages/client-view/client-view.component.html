@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-body>
+        <div class="flex-centered col-sm-12">
+          <div  *ngFor="let post of lis;">
+            <h2 class="title">Details - {{ post.BookingId }} </h2>
+            <table class="table">
+              <tr>
+                <td colspan="3">Date : {{ post.Date }} Time : {{ post.TimeSlot }}</td>
+              </tr>
+              <tr>
+                <td colspan="3">Service : {{ post.ServiceName }}</td>
+              </tr>
+              <tr>
+                <td>Name : {{ post.ClientName }}</td>
+
+                <td>Email : {{ post.ClientEmail }}</td>
+
+                <td>Mobile : {{ post.ClientMobile }}</td>
+              </tr>
+              <tr>
+                <td colspan="3">Address : {{ post.Address }}<bR>{{ post.Country }}<bR>{{ post.State }}<bR>{{ post.City }}<bR>{{ post.Place }}</td>
+              </tr>
+              <tr>
+                <td colspan="3">Expected Date : {{ post.ExpectedDate }}</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+

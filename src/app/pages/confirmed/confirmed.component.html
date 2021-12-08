@@ -1,0 +1,15 @@
+<div id="dialogContainer">
+  <div id="cofirmDialog" #dialog></div>
+</div>
+
+<div class="buttons-row">
+<button (click)="getSelectedRows()" nbButton hero class="size-medium shape-rectangle appearance-hero status-primary ng-star-inserted nb-transition">Change to Pickup in Progress</button></div>
+<ag-grid-angular
+  #agGrid
+  style="width: 1100px; height: 500px;"
+  class="ag-theme-alpine"
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+  rowSelection="multiple"
+>
+</ag-grid-angular>
